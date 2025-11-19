@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Flow - Predictable Clients From LinkedIn</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // Set Inter as the default sans-serif font
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Extracted from your logo image
+                        'brand-dark': '#102A43',
+                        'brand-teal': '#00C9A7',
+                        'brand-light': '#F0F4F8',
+                        'brand-gray': '#BCCCDC',
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Apply the custom font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #102A43; /* brand-dark */
+            color: #BCCCDC; /* brand-gray */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom shadow for the teal button to make it pop */
+        .btn-primary-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0, 201, 167, 0.5);
+        }
+        .btn-primary-shadow:hover {
+            box-shadow: 0 15px 40px -10px rgba(0, 201, 167, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark">
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 right-0 z-10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-bold text-brand-light">
+                Scale<span class="text-brand-teal">Flow</span>
+            </a>
+            <!-- CTA Button (Desktop) -->
+            <a href="#cta-section" class="hidden md:inline-block bg-brand-teal text-brand-dark font-bold py-3 px-6 rounded-lg transition-transform duration-300 transform hover:scale-105 btn-primary-shadow">
+                Book Your Free Strategy Call
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 1. HERO SECTION -->
+        <section class="relative pt-32 md:pt-48 pb-20 md:pb-32 flex items-center justify-center text-center px-4">
+            <!-- Background Gradient -->
+            <div class="absolute inset-0 opacity-20" style="background: radial-gradient(circle at 50% 0%, rgba(0,201,167,0.3) 0%, rgba(0,201,167,0) 50%);"></div>
+            
+            <div class="relative z-1 max-w-4xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-light leading-tight">
+                    Predictable Clients From <span class="text-brand-teal">LinkedIn</span> — Without Ads, Funnels, or Guesswork
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-brand-gray max-w-2xl mx-auto">
+                    A simple 3-step system that helps Founders book qualified sales calls every week — even with a small audience.
+                </p>
+                <p class="mt-4 text-base text-brand-gray opacity-80">
+                    Stop hoping. Start growing with predictability.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#cta-section" class="w-full sm:w-auto bg-brand-teal text-brand-dark font-bold text-lg py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 btn-primary-shadow">
+                        👉 Book Your Free Strategy Call
+                    </a>
+                    <a href="#solution-section" class="w-full sm:w-auto text-brand-gray font-medium py-4 px-8 rounded-lg hover:text-brand-light transition-colors duration-300">
+                        🔍 See The 3-Step System
+                    </a>
+                </div>
+                <p class="mt-8 text-sm text-brand-gray opacity-70 italic">
+                    “Your next client is already on LinkedIn — they just haven’t found you yet.”
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. PROBLEM SECTION -->
+        <section class="py-20 md:py-28 bg-opacity-50" style="background-color: rgba(13, 33, 54, 0.7);"> <!-- Slightly darker shade -->
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-light">
+                        If You're Struggling With Consistent Clients, <span class="text-brand-teal">You're Not Alone</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-brand-gray">
+                        Most Founders feel stuck because:
+                    </p>
+                </div>
+                
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Problem Points -->
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-lg border border-slate-700">
+                        <p class="text-lg text-brand-light">Revenue comes in waves</p>
+                    </div>
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-lg border border-slate-700">
+                        <p class="text-lg text-brand-light">They rely too much on referrals</p>
+                    </div>
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-lg border border-slate-700">
+                        <p class="text-lg text-brand-light">Content feels like shouting into the void</p>
+                    </div>
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-lg border border-slate-700">
+                        <p class="text-lg text-brand-light">They’re busy, but still not booking calls</p>
+                    </div>
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-lg border border-slate-700">
+                        <p class="text-lg text-brand-light">They’re overwhelmed by what actually works</p>
+                    </div>
+                    <div class="bg-brand-dark p-6 rounded-lg shadow-lg border border-slate-700">
+                        <p class="text-lg text-brand-light">They don’t know where the next client is coming from</p>
+                    </div>
+                </div>
+
+                <p class="mt-12 text-center text-xl md:text-2xl text-brand-light italic font-medium">
+                    “Effort isn’t the problem. <span class="text-brand-teal">Predictability is.</span>”
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. SOLUTION SECTION -->
+        <section id="solution-section" class="py-20 md:py-28">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-light">
+                        The Simple <span class="text-brand-teal">3-Step</span> LinkedIn System
+                    </h2>
+                </div>
+
+                <div class="mt-16 flex flex-col md:flex-row justify-center gap-8">
+                    <!-- Step 1 -->
+                    <div class="flex-1 max-w-md mx-auto md:max-w-none bg-slate-800 p-8 rounded-lg shadow-xl border border-slate-700 transform transition-transform duration-300 hover:-translate-y-2">
+                        <div class="text-5xl font-extrabold text-brand-teal mb-4">1.</div>
+                        <h3 class="text-2xl font-bold text-brand-light mb-3">Attract the Right Buyers</h3>
+                        <p class="text-brand-gray">Content + positioning that magnetically pulls in your ideal clients.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex-1 max-w-md mx-auto md:max-w-none bg-slate-800 p-8 rounded-lg shadow-xl border border-slate-700 transform transition-transform duration-300 hover:-translate-y-2">
+                        <div class="text-5xl font-extrabold text-brand-teal mb-4">2.</div>
+                        <h3 class="text-2xl font-bold text-brand-light mb-3">Build Automatic Trust</h3>
+                        <p class="text-brand-gray">Authority frameworks that position you as the go-to expert.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex-1 max-w-md mx-auto md:max-w-none bg-slate-800 p-8 rounded-lg shadow-xl border border-slate-700 transform transition-transform duration-300 hover:-translate-y-2">
+                        <div class="text-5xl font-extrabold text-brand-teal mb-4">3.</div>
+                        <h3 class="text-2xl font-bold text-brand-light mb-3">Convert to Booked Calls</h3>
+                        <p class="text-brand-gray">A friction-free system that turns your warm audience into inbound sales conversations.</p>
+                    </div>
+                </div>
+
+                <p class="mt-16 text-center text-xl md:text-2xl text-brand-light italic font-medium">
+                    “No tricks. No hacks. Just a system that <span class="text-brand-teal">compounds</span> every month.”
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. VALUE SECTION -->
+        <section class="py-20 md:py-28" style="background-color: rgba(13, 33, 54, 0.7);">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-light">
+                        Everything You Need to <span class="text-brand-teal">Sign Clients Predictably</span>
+                    </h2>
+                </div>
+
+                <div class="mt-16 max-w-3xl mx-auto space-y-5">
+                    <!-- Benefit Item -->
+                    <div class="flex items-start bg-brand-dark p-5 rounded-lg border border-slate-700">
+                        <svg class="w-6 h-6 text-brand-teal flex-shrink-0 mr-4 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-xl text-brand-light">Your marketing done for you</span>
+                    </div>
+                    <!-- Benefit Item -->
+                    <div class="flex items-start bg-brand-dark p-5 rounded-lg border border-slate-700">
+                        <svg class="w-6 h-6 text-brand-teal flex-shrink-0 mr-4 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-xl text-brand-light">Consistent inbound leads</span>
+                    </div>
+                    <!-- Benefit Item -->
+                    <div class="flex items-start bg-brand-dark p-5 rounded-lg border border-slate-700">
+                        <svg class="w-6 h-6 text-brand-teal flex-shrink-0 mr-4 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-xl text-brand-light">Weekly booked sales calls</span>
+                    </div>
+                    <!-- Benefit Item -->
+                    <div class="flex items-start bg-brand-dark p-5 rounded-lg border border-slate-700">
+                        <svg class="w-6 h-6 text-brand-teal flex-shrink-0 mr-4 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-xl text-brand-light">Authority over competitors</span>
+                    </div>
+                    <!-- Benefit Item -->
+                    <div class="flex items-start bg-brand-dark p-5 rounded-lg border border-slate-700">
+                        <svg class="w-6 h-6 text-brand-teal flex-shrink-0 mr-4 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-xl text-brand-light">A predictable, month-on-month growth system</span>
+                    </div>
+                    <!-- Benefit Item -->
+                    <div class="flex items-start bg-brand-dark p-5 rounded-lg border border-slate-700">
+                        <svg class="w-6 h-6 text-brand-teal flex-shrink-0 mr-4 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-xl text-brand-light">Confidence — because you know exactly where your next client is coming from</span>
+                    </div>
+                </div>
+
+                <p class="mt-16 text-center text-xl md:text-2xl text-brand-light italic font-medium">
+                    “Clients don’t show up by accident — they show up <span class="text-brand-teal">because of systems.</span>”
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. PROOF SECTION -->
+        <section class="py-20 md:py-28">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-light">
+                        Results That <span class="text-brand-teal">Speak for Themselves</span>
+                    </h2>
+                </div>
+
+                <div class="mt-16 text-center text-brand-gray bg-slate-800 max-w-3xl mx-auto p-12 md:p-16 rounded-lg border-2 border-dashed border-slate-700">
+                    <p class="text-lg">
+                        (This is where you'll plug in screenshots, messages, or case studies.)
+                    </p>
+                    <p class="mt-4 text-sm opacity-80">
+                        e.g., "Gained 10 new clients in 60 days."<br>
+                        e.g., "Booked 15 qualified calls last month alone."
+                    </p>
+                </div>
+
+                <p class="mt-16 text-center text-xl md:text-2xl text-brand-light italic font-medium">
+                    “When the system works, the results become <span class="text-brand-teal">inevitable.</span>”
+                </p>
+            </div>
+        </section>
+
+        <!-- 6. ABOUT THE FOUNDER -->
+        <section class="py-20 md:py-28" style="background-color: rgba(13, 33, 54, 0.7);">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <!-- Founder Image -->
+                <div class="flex justify-center md:justify-end">
+                    <img class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-brand-teal shadow-2xl" 
+                         src="https://placehold.co/400x400/102A43/00C9A7?text=Chaim" 
+                         alt="Chaim, Founder of Scale Flow"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x400/102A43/00C9A7?text=Chaim';">
+                </div>
+                <!-- Founder Bio -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-light">
+                        Meet Chaim — <span class="text-brand-teal">Founder of Scale Flow</span>
+                    </h2>
+                    <p class="mt-6 text-lg text-brand-gray">
+                        I help Founders who are tired of unpredictable sales calls and inconsistent revenue.
+                    </p>
+                    <p class="mt-4 text-lg text-brand-gray">
+                        After speaking with hundreds of Founders, I created a system that works even if you:
+                    </p>
+                    <ul class="mt-6 space-y-3">
+                        <li class="flex items-center text-brand-gray text-lg">
+                            <svg class="w-5 h-5 text-brand-teal flex-shrink-0 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                            Don’t have a big audience
+                        </li>
+                        <li class="flex items-center text-brand-gray text-lg">
+                            <svg class="w-5 h-5 text-brand-teal flex-shrink-0 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                            Don’t want to run ads
+                        </li>
+                        <li class="flex items-center text-brand-gray text-lg">
+                            <svg class="w-5 h-5 text-brand-teal flex-shrink-0 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                            Don’t want to post every day
+                        </li>
+                        <li class="flex items-center text-brand-gray text-lg">
+                            <svg class="w-5 h-5 text-brand-teal flex-shrink-0 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                            Don’t want complicated funnels
+                        </li>
+                    </ul>
+                    <p class="mt-6 text-lg text-brand-light font-medium">
+                        Just a simple, predictable, scalable LinkedIn system that grows with you.
+                    </p>
+                    <p class="mt-8 text-xl md:text-2xl text-brand-light italic font-medium">
+                        “Predictability beats <span class="text-brand-teal">hustle</span> — every time.”
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FINAL CTA SECTION -->
+        <section id="cta-section" class="py-20 md:py-32 bg-brand-teal">
+            <div class="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-brand-dark leading-tight">
+                    Ready to Stop Guessing and Start Growing?
+                </h2>
+                <p class="mt-6 text-lg md:text-xl text-slate-800">
+                    If you want predictable clients without stress or complexity, let’s talk.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#" class="w-full sm:w-auto bg-brand-dark text-brand-light font-bold text-lg py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        👉 Book Your Free Strategy Call
+                    </a>
+                    <a href="#" class="w-full sm:w-auto text-slate-800 font-bold py-4 px-8 rounded-lg hover:bg-brand-dark/10 transition-colors duration-300">
+                        💬 DM “FLOW” on LinkedIn
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-slate-700 italic font-medium">
+                    “One call could change the next 12 months of your business.”
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer class="py-16" style="background-color: rgba(13, 33, 54, 0.7);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="#" class="text-2xl font-bold text-brand-light">
+                Scale<span class="text-brand-teal">Flow</span>
+            </a>
+            <p class="mt-4 text-sm text-brand-gray max-w-md mx-auto">
+                Predictable Sales Calls for Founders Who Want Consistent Growth.
+            </p>
+            <p class="mt-6 text-xs text-brand-gray opacity-60">
+                © 2025 Scale Flow | Edgware, England, United Kingdom
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
